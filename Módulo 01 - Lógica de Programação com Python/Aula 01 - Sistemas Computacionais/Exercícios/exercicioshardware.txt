@@ -1,0 +1,97 @@
+1 - Descreva a finalidade dos seguintes componentes
+
+ULA: Realiza operações lógicas e aritméticas.
+UC: Controla a sequência de operações do processador.
+Registradores: Armazenam temporariamente dados no processador.
+MMU: Gerencia o acesso à memória principal.
+Diferença entre memória primária (RAM) e secundária (ex.: Disco Rígido):
+
+2 - Qual a diferença entre memória primária e memória secundária?
+
+Memória Primária: Volátil, armazena dados temporários, rápida.
+Memória Secundária: Não volátil, armazena dados permanentes, como discos rígidos.
+
+3 - Realize a conversão dos seguintes números decimais para binário
+
+a. 178: 10110010
+b. 1022: 1111111110
+c. 5: 101
+d. 92: 1011100
+e. 2033: 11111110001
+
+f. 1024: 10000000000
+g. 32: 100000
+h. 64: 1000000
+i. 73: 1001001
+j. 12: 1100
+
+k. 3000: 101110111000
+l. 42: 101010
+m. 80: 1010000
+n. 7: 111
+o. 256: 100000000
+
+4 - Realize a conversão dos seguintes binários para decimal:
+
+1110 1111 0011 1110: 15,934
+1111: 15
+1110 1110: 238
+1010 1010: 170
+0101 0111: 87
+
+5 - Faça a conversão entre as unidades de medidas:
+
+a. 1B para bit: 8 bits
+b. 13kB para B: 13,312 bytes
+c. 2000MB para GB: 2 GB
+d. 3GB para bit: 24.000.000.000 bits
+
+1010 1010 1010: 2730
+1111 1111: 255
+1011: 11
+1011 1110: 190
+1011 0001: 177
+
+6 - Converta o seu nome para binário.
+
+01000111 01010101 01001001 01001100 01001000 01000101 01010010 01001101 01000101.
+
+7 - Converta as seguintes frases para binário:
+
+ a. "Hello World!":
+
+01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100 00100001
+
+b. "Um inseto no Mark II":
+
+01010101 01101101 00100000 01101001 01101110 01110011 01100101 01110100 01101111 00100000 01101110 01101111 00100000 01001101 01100001 01110010 01101011 00100000 01001001 01001001
+
+c. "Os líderes do futuro são os que empoderam os outros":
+
+01001111 01110011 00100000 01101100 11010000 10101000 11011111 01110010 01100101 01110011 00100000 01100100 01101111 00100000 01100110 01110101 01110100 01110101 01110010 01101111 00100000 01110011 11000010 10101000 01101111 00100000 01100100 01101111 01110011 00100000 01100001 01110010 11000010 10101000 00100000 01110011 00100000 01110011 11000010 10101000 01110011 00100000 01110111 01110101 01100101 00100000 01100101 01101101 01110000 01101111 01100100 01100101 01110010 01100001 01101101 00100000 01101111 01110011 00100000 01101111 01110101 01110100 01110010 01101111 01110011
+
+8 - Encontre e copie um algoritmo desenvolvido em uma linguagem de baixo nível
+e um desenvolvido em uma linguagem de alto nível.
+
+Baixo nível 
+
+section .data
+    msg db 'Hello, World!', 0
+
+section .text
+global _start
+
+_start:
+    mov eax, 4         ; syscall para escrever na saída padrão (stdout)
+    mov ebx, 1         ; descritor de arquivo para stdout (1)
+    mov ecx, msg       ; endereço da mensagem
+    mov edx, 13        ; comprimento da mensagem
+    int 0x80           ; chamar o kernel
+
+    mov eax, 1         ; syscall para sair do programa
+    int 0x80           ; chamar o kernel
+
+Alto nível
+
+mensagem = "Hello, World!"
+print(mensagem)

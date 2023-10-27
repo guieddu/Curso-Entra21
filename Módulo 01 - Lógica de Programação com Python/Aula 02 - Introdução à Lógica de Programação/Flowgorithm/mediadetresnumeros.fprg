@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gedu2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-15 07:53:15 "/>
+        <attribute name="created" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMTU7IjA3OjIxOjQwICI7MjA4Mg=="/>
+        <attribute name="edited" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMTU7IjA3OjUzOjE1ICI7MTsyMTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Insira o primeiro n&#250;mero:&quot;" newline="True"/>
+            <declare name="numero1" type="Integer" array="False" size=""/>
+            <input variable="numero1"/>
+            <output expression="&quot;Insira o segundo n&#250;mero:&quot;" newline="True"/>
+            <declare name="numero2" type="Integer" array="False" size=""/>
+            <input variable="numero2"/>
+            <output expression="&quot;E por fim, insira o terceiro n&#250;mero:&quot;" newline="True"/>
+            <declare name="numero3" type="Integer" array="False" size=""/>
+            <input variable="numero3"/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <assign variable="media" expression="(numero1+numero2+numero3)/3"/>
+            <output expression="&quot;A m&#233;dia dos valores enviados &#233;: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

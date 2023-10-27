@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gedu2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-21 08:21:00 "/>
+        <attribute name="created" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMjE7IjA3OjU2OjUwICI7MjA4OA=="/>
+        <attribute name="edited" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMjE7IjA4OjIxOjAwICI7MTsyMTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Digite quantos dias possui o ano: &quot;" newline="True"/>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <input variable="ano"/>
+            <if expression="ano % 4 = 0">
+                <then>
+                    <if expression="ano % 100 = 0">
+                        <then>
+                            <if expression="ano % 400 = 0">
+                                <then>
+                                    <output expression="&quot;O ano &#233; bissexto (tem 366 dias).&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;O ano n&#227;o &#233; um ano bissexto (tem 365 dias)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;O ano &#233; bissexto (tem 366 dias)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;O ano n&#227;o &#233; um ano bissexto (tem 365 dias)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

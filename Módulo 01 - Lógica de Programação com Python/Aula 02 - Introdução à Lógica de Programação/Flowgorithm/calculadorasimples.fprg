@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gedu2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-21 07:55:32 "/>
+        <attribute name="created" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMjE7IjA3OjQ1OjE0ICI7MjA4Ng=="/>
+        <attribute name="edited" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMjE7IjA3OjU1OjMyICI7MTsyMTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+            <declare name="numero1" type="Integer" array="False" size=""/>
+            <input variable="numero1"/>
+            <output expression="&quot;Selecione a opera&#231;&#227;o desejada (+, -, *, /)&quot;" newline="True"/>
+            <declare name="operacao" type="String" array="False" size=""/>
+            <input variable="operacao"/>
+            <output expression="&quot;Insira o segundo n&#250;mero: &quot;" newline="True"/>
+            <declare name="numero2" type="Integer" array="False" size=""/>
+            <input variable="numero2"/>
+            <declare name="soma" type="Integer" array="False" size=""/>
+            <if expression="operacao = &quot;+&quot;">
+                <then>
+                    <assign variable="soma" expression="numero1 + numero2"/>
+                    <output expression="&quot;O resultado da soma dos n&#250;meros inseridos &#233;: &quot; &amp; soma" newline="True"/>
+                </then>
+                <else>
+                    <declare name="subtracao" type="Integer" array="False" size=""/>
+                    <if expression="operacao = &quot;-&quot;">
+                        <then>
+                            <assign variable="subtracao" expression="numero1 - numero2"/>
+                            <output expression="&quot;O resultado da subtra&#231;&#227;o dos n&#250;meros inseridos &#233;: &quot; &amp; subtracao" newline="True"/>
+                        </then>
+                        <else>
+                            <declare name="multiplicacao" type="Integer" array="False" size=""/>
+                            <if expression="operacao = &quot;*&quot;">
+                                <then>
+                                    <assign variable="multiplicacao" expression="numero1 * numero2"/>
+                                    <output expression="&quot;O resultado da multiplica&#231;&#227;o dos n&#250;meros inseridos &#233;: &quot; &amp; multiplicacao" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="operacao = &quot;/&quot;">
+                                        <then>
+                                            <if expression="numero2 = 0">
+                                                <then>
+                                                    <output expression="&quot;Imposs&#237;vel realizar a divis&#227;o por 0&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <declare name="divisao" type="Integer" array="False" size=""/>
+                                                    <assign variable="divisao" expression="numero1 / numero2"/>
+                                                    <output expression="&quot;O resultado da divis&#227;o dos n&#250;meros inseridos &#233;: &quot; &amp; divisao" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Opera&#231;&#227;o inv&#225;lida&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

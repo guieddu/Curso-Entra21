@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <h1>Escola Virtual</h1>
+    <br>
+    <h2>Formulário de Pré-Matrícula</h2>
+    <br>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form method="post">
+            <label>
+                Nome do aluno:
+                <textarea name="infoNome" cols="30" rows="1"></textarea>
+                <br><br>
+                Nascimento
+                <input type="date" name="infoData">
+                <br><br>
+                Nome da Mãe:
+                <textarea name="infoNomeMae" cols="30" rows="1"></textarea>
+                <br><br>
+                Nome do Pai:
+                <textarea name="infoNomePai" cols="30" rows="1"></textarea>
+                <br><br>
+                Telefone:
+                <textarea name="infoTelefone" cols="30" rows="1"></textarea>
+                <br><br><br><br>
+            </label>
+    </fieldset>
+    <fieldset>
+        <legend>Informações da Matricula</legend>
+            Série <br>
+            <select name="serie">
+                <option value="" selected disabled>Pré-escola</option>
+                <option value="1°s">1° série (ensino fundamental)</option>
+                <option value="1°s">2° série (ensino fundamental)</option>
+                <option value="1°s">3° série (ensino fundamental)</option>
+                <option value="1°s">4° série (ensino fundamental)</option>
+                <option value="1°s">5° série (ensino fundamental)</option>
+                <option value="1°s">6° série (ensino fundamental)</option>
+                <option value="1°s">7° série (ensino fundamental)</option>
+                <option value="1°s">8° série (ensino fundamental)</option>
+                <option value="1°s">9° série (ensino fundamental)</option>
+                <option value="1°s">1° série (ensino médio)</option>
+                <option value="1°s">2° série (ensino médio)</option>
+                <option value="1°s">3° série (ensino médio)</option>
+            </select>
+            <br><br>
+    <label>
+        Turno: <br>
+        <input type="radio" name="turno" value="Manhã"> Manhã
+    </label>
+    <label>
+        <input type="radio" name="turno" value="Tarde"> Tarde
+    </label>
+    <br><br>
+    <p>Atividades Extrarriculares:</p>
+    <label>
+        <input type="checkbox" name="Informática"> Informática
+        <br>
+        <input type="checkbox" name="Múscia"> Música
+        <br>
+        <input type="checkbox" name="Balet"> Balet
+        <br>
+        <input type="checkbox" name="Pintura"> Pintura
+        <br>
+        <input type="checkbox" name="Judô"> Judô
+        <br>
+        <input type="checkbox" name="Futebol"> Futebol
+    </label>
+    </fieldset>
+    <button type="submit">Enviar Formulário</button>
+    <input type="reset" value="Limpa Campos">
+</form>
+</body>
+</html>

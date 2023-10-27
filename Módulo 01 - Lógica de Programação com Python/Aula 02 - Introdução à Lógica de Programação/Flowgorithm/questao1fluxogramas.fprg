@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gedu2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-21 07:39:44 "/>
+        <attribute name="created" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMjE7IjA3OjI4OjE0ICI7MjA4Nw=="/>
+        <attribute name="edited" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMjE7IjA3OjM5OjQ0ICI7MTsyMjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Digite a sua altura: &quot;" newline="True"/>
+            <declare name="altura" type="Real" array="False" size=""/>
+            <input variable="altura"/>
+            <output expression="&quot;Digite o seu sexo, considerando (M) para Masculino e (F) para Feminino: &quot;" newline="True"/>
+            <declare name="m" type="String" array="False" size=""/>
+            <declare name="f" type="String" array="False" size=""/>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <input variable="sexo"/>
+            <if expression="sexo = m">
+                <then>
+                    <declare name="pesoidealhomens" type="Real" array="False" size=""/>
+                    <assign variable="pesoidealhomens" expression="(72.7 * altura) - 58"/>
+                    <output expression="&quot;O peso ideal para homens com sua altura &#233;: &quot; &amp; pesoidealhomens" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sexo = f">
+                        <then>
+                            <declare name="pesoidealmulheres" type="Real" array="False" size=""/>
+                            <assign variable="pesoidealmulheres" expression="(62.1 * altura) - 44.7"/>
+                            <output expression="&quot;O peso ideal para homens com sua altura &#233;: &quot; &amp; pesoidealhomens" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Comando inv&#225;lido&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

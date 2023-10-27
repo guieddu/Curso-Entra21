@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gedu2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-15 08:34:20 "/>
+        <attribute name="created" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMTU7IjA3OjUzOjE4ICI7MjA5Mg=="/>
+        <attribute name="edited" value="Z2VkdTI7UEMtR1VJOzIwMjMtMDgtMTU7IjA4OjM0OjIwICI7MTsyMTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Insira a temperatura em graus Celsius:&quot;" newline="True"/>
+            <declare name="celsius" type="Integer" array="False" size=""/>
+            <input variable="celsius"/>
+            <assign variable="celsius" expression="celsius"/>
+            <output expression="&quot;Insira a temperatura em graus Fahrenheit:&quot;" newline="True"/>
+            <declare name="fahrenheit" type="Integer" array="False" size=""/>
+            <input variable="fahrenheit"/>
+            <assign variable="fahrenheit" expression="fahrenheit"/>
+            <assign variable="conta" expression="&amp;celsius*1.8+32"/>
+            <output expression="&quot;Grau celsius: &quot; &amp; celsius" newline="True"/>
+            <output expression="&quot;Grau fahrenheit: &quot; &amp; fahrenheit" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

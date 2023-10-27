@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Responsive Rangers</title>
+    <style>
+        .box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation-name: name;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes name {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>Introdução aos Keyframes:</h1>
+    <p>Keyframes são usados em CSS para criar animações suaves e personalizadas em elementos HTML. Eles permitem que você defina diferentes 
+    estágios de uma animação e controle as transições entre esses estágios. As principais propriedades relacionadas aos keyframes são:</p>
+    <ul>
+        <li>@keyframes</li>
+        <li>animation-name</li> 
+        <li>animation-duration</li>
+        <li>animation-timing-function</li>
+        <li>animation-delay</li>
+        <li>animation-iteration-count</li>
+        <li>animation-direction</li>
+    </ul>
+
+    <h2>Abaixo podemos ver as explicações de cada uma das propiedades:</h2><br>
+    <h3>@keyframes:</h3>
+    <p>O @keyframes é uma regra especial que define os estágios da animação. Você fornece um nome para o conjunto de keyframes 
+    (por exemplo, @keyframes name) e define os estados-chave (porcentagens ou pixels) da animação dentro dele.</p><br>
+    <code>
+        @keyframes name {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+    <br><br><br>
+          <h3>animation-name:</h3>
+    <p>Define o nome do conjunto de keyframes a ser usado na animação de um elemento.
+        Exemplo:</p><br>
+    <code>
+        animation-name: name;
+    </code>
+    <br><br><br>
+          <h3>animation-duration:</h3>
+    <p>Especifica a duração da animação em segundos ou milissegundos.
+        Exemplo:</p><br>
+    <code>
+        animation-duration: 2s;
+    </code>
+    <br><br><br>
+          <h3>animation-timing-function:</h3>
+    <p>Define a temporização que controla a velocidade e a aceleração de uma animação, podendo ser (ease, linear, ease-in, ease-out, ease-in-out e cubic-bezier()(função que eu posso definir um padrão de minha escolha))
+        Exemplo:</p><br>
+    <code>
+        animation-timing-function: ease-in-out;
+    </code>
+    <br><br><br>
+          <h3>animation-delay:</h3>
+    <p>Adiciona um atraso antes do início da animação em segundos ou milissegundos.
+        Exemplo:</p><br>
+    <code>
+        animation-delay: 1s;
+    </code>
+    <br><br><br>
+          <h3>animation-iteration-count:</h3>
+    <p>Define quantas vezes a animação deve ser reproduzida (ou "infinite" para repetição infinita).
+        Exemplo:</p><br>
+    <code>
+        animation-iteration-count: infinite;
+    </code>
+    <br><br><br>
+          <h3>animation-direction:</h3>
+    <p>Especifica a direção da animação (normal, reverse, alternate, alternate-reverse).
+        Exemplo:</p><br>
+    <code>
+        animation-direction: alternate;
+    </code>
+    <br><br><br>
+    <h3>Exemplos Práticos:</h3><br>
+    <p>Suponhamos que você deseje aplicar uma animação simples de fading em um elemento HTML:</p>
+    <br><br>
+    <div class="box"></div>
+    <br><br>
+    <p>Neste exemplo, o elemento .box terá uma animação de fading que dura 2 segundos, começa
+        após um segundo de atraso, alterna a direção da animação e repete infinitamente.</p>
+    <br>
+    <h3>Dicas e Melhores Práticas:</h3>
+    <ul>
+        <li>Experimente diferentes valores para animation-timing-function para controlar a velocidade da animação.</li>
+        <li>Use valores em porcentagem nos keyframes para criar animações mais precisas.</li>
+        <li>Mantenha a consistência nos códigos CSS em sua página para garantir uma aparência uniforme em suas animações.</li>
+    </ul>
+</body>
+</html>
