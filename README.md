@@ -1,2 +1,2 @@
-# html
-Exercícios de HTML do curso de Python do projeto Entra21.
+# Curso Entra21
+Este é um repositório para o curso de PYTHON do Entra21
