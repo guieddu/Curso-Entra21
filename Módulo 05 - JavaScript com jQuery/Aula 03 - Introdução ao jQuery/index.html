@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios</title>
+  <script src="/static/js/jquery-3.7.1.min.js"></script>
+  <script src="/Módulo 05 - JavaScript com jQuery/Aula 03 - Introdução ao jQuery/Exercícios/exercicio1.js"></script>
+  <script src="/Módulo 05 - JavaScript com jQuery/Aula 03 - Introdução ao jQuery/Exercícios/exercicio2.js"></script>
+  <script src="/Módulo 05 - JavaScript com jQuery/Aula 03 - Introdução ao jQuery/Exercícios/exercicio3.js"></script>
+  <script src="/Módulo 05 - JavaScript com jQuery/Aula 03 - Introdução ao jQuery/Exercícios/exercicio4.js"></script>
+  <script src="/Módulo 05 - JavaScript com jQuery/Aula 03 - Introdução ao jQuery/Exercícios/exercicio5.js"></script>
+  <style>
+    #counter {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .counter-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 13px 18px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 1px;
+    }
+
+    #count {
+        margin: 0 18px;
+    }
+
+    #timer {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    #controls {
+        margin-top: 10px;
+    }
+
+    .timer-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 1px;
+        margin-right: 10px;
+    }
+
+    #peopleTable {
+        width: 20%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    #peopleTable th, #peopleTable td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #peopleTable th {
+        background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <button id="clicker">Clique aqui</button>
+<p id="secret" style="display: none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem vel sunt iste animi incidunt explicabo illum, quo illo magnam similique voluptatibus labore ex. Dolores accusantium numquam quaerat deserunt cumque!.</p>
+
+
+
+<div id="counter">
+  <button id="decrement" class="counter-btn">-</button>
+  <span id="count">0</span>
+  <button id="increment" class="counter-btn">+</button>
+</div>
+
+
+<div id="timer">00:00:00</div>
+<div id="controls">
+    <button id="start" class="timer-btn">Iniciar</button>
+    <button id="pause" class="timer-btn">Pausar</button>
+    <button id="resume" class="timer-btn">Resumir</button>
+    <button id="reset" class="timer-btn">Resetar</button>
+</div>
+
+
+
+<table id="peopleTable">
+  <thead>
+      <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Sexo</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<script>
+  const people = [
+      { id: 1, name: "Ana", age: 23, sex: "F" },
+      { id: 2, name: "Maria", age: 42, sex: "F" },
+      { id: 3, name: "João", age: 15, sex: "M" },
+      { id: 4, name: "Matheus", age: 19, sex: "M" },
+      { id: 5, name: "Antônio", age: 40, sex: "M" },
+  ];
+</script>
+
+</body>
+</html>
