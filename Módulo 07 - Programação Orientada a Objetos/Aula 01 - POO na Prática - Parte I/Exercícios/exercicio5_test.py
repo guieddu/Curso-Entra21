@@ -1,6 +1,6 @@
 import pytest
 
-from calculator import Calculator
+from exercicio5_test import Calculator
 
 def test_sum():
     assert Calculator.sum(1, 2, 3) == 6

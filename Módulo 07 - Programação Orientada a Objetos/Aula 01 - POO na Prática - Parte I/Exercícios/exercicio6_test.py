@@ -1,6 +1,6 @@
 import pytest
 
-from car import Car
+from exercicio6_test import Car
 
 def test_car_speed_up():
     car = Car("Toyota", "Corolla", 2021)

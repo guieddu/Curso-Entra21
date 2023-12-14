@@ -1,6 +1,6 @@
 import pytest
 
-from university import University
+from exercicio7_test import University
 
 @pytest.fixture(autouse=True)
 def reset_university_class():
